@@ -20,14 +20,15 @@ public class Filial {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
 
     private String name;
+
 
    @OneToMany(mappedBy = "filial")
    private Set<Product> products = new HashSet<>();
 
    @OneToOne
    private Address address;
-
 
 }
