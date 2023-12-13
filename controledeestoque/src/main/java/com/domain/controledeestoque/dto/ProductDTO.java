@@ -1,5 +1,7 @@
 package com.domain.controledeestoque.dto;
 
+import com.domain.controledeestoque.entities.Category;
+import com.domain.controledeestoque.entities.Filial;
 import com.domain.controledeestoque.entities.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,6 +19,9 @@ public class ProductDTO {
     private String brand; //marca
     private String description;
     private Integer quantity;
+    private Category category;
+    private Filial filial;
+
 
     public ProductDTO(Product entity){
         id = entity.getId();
