@@ -22,7 +22,7 @@ public class Filial {
     private Long id;
 
     private String name;
-    
+
    @OneToMany(mappedBy = "filial")
 
    private Set<Product> products = new HashSet<>();
